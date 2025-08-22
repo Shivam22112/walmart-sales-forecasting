@@ -12,31 +12,30 @@ An end-to-end pipeline for Walmart sales forecasting using PySpark for ETL, Matp
 - Pipeline orchestration via Airflow DAG  
 - Interactive visualization demo on Databricks  
 
----
+--## Project Structure
 
-## Project Structure
+```
+Data/
+ ├── Raw/                     # Original datasets  
+ └── Processed/               # Cleaned & transformed data  
 
-📂 Data
-├── 📁 Raw/ # Original datasets
-└── 📁 Processed/ # Cleaned & transformed data
+Scripts/
+ ├── etl.py                   # Data processing with PySpark  
+ ├── eda.py                   # Exploratory analysis and plotting  
+ ├── model.py                 # Model training and prediction  
+ └── airflow_dag.py           # Airflow DAG definition  
 
-📂 Scripts
-├── etl.py # Data processing with PySpark
-├── eda.py # Exploratory analysis and plotting
-├── model.py # Model training and prediction
-└── airflow_dag.py # Airflow DAG definition
+Output/
+ ├── random_forest_model/     # Saved trained model  
+ ├── random_forest_predictions.parquet  
+ └── validation_predictions.parquet  
 
-📂 Output
-├── 📁 random_forest_model/ # Saved trained model
-├── random_forest_predictions.parquet
-└── validation_predictions.parquet
+Plots/                        # EDA generated plots  
 
-📂 Plots/ # EDA generated plots
-
-📄 requirements.txt # Python dependencies
-📄 README.md # Project documentation
-📄 .gitignore # Git ignore rules
-
+requirements.txt              # Python dependencies  
+README.md                     # Project documentation  
+.gitignore                    # Git ignore rules  
+```
 ---
 
 ## Contributors
