@@ -12,7 +12,7 @@ An end-to-end pipeline for Walmart sales forecasting using PySpark for ETL, Matp
 - Pipeline orchestration via Airflow DAG  
 - Interactive visualization demo on Databricks  
 
---## Project Structure
+## Project Structure
 
 ```
 Data/
